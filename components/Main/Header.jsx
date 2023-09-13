@@ -16,9 +16,9 @@ const Header = () => {
       <div className='flex justify-between px-4 pt-4'>
         <h2>Get Your Certificates</h2>
         <div className='flex'>
-          <Button className='mx-4'>Claim</Button>
-          {isClient && <Button><Wallet /></Button>}
-        </div>
+  <Button className='mx-4'>Claim</Button>
+  {isClient && <Wallet />}
+</div>
       </div>
     </>
   );
