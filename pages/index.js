@@ -2,6 +2,7 @@ import React from 'react';
 import { ConnectionProvider, WalletProvider, WalletModalProvider } from '@solana/wallet-adapter-react';
 
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import Wallet from '@/Wallet/Wallet';
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
     //   </WalletProvider>
     // </ConnectionProvider>
     <>
-      
+      {/* <Wallet /> */}
     </>
   );
 }
