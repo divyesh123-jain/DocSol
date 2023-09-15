@@ -6,6 +6,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --New-Swatch: #130A17;
+  --New-Swatch: #120916;
+  --New-Swatch: #000F1A;
+  --New-Swatch: #000E1C;
+  --New-Swatch: #0C0E19;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,4 +24,13 @@
 body {
   
 }
+
+.bg-customColor {
+  background-color: var(--New-Swatch);
+}
+
+
+
+
+
 

@@ -1,12 +1,11 @@
-
 import React from 'react'
 
-const Signup = () => {
+const Profile = () => {
   return (
     <>
-   
+      bhskj
     </>
   )
 }
 
-export default Signup
+export default Profile

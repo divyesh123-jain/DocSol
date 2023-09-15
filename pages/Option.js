@@ -16,10 +16,19 @@ const Option = () => {
 
   return (
    <>
-   <div className='flex'>
-    <Button onClick={handleAggregatorclick}>Aggregator</Button>
+   
+    
+    <div className="bg-customColor flex items-center justify-center h-screen">
+
+    <div className="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+
+  <Button className = "mx-6" onClick={handleAggregatorclick}>Aggregator</Button>
     <Button onClick={handleUserclick}>User</Button>
-    </div>
+
+  </div>
+  </div>
+
+    
    </>
   )
 }

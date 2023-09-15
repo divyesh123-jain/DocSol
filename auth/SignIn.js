@@ -24,8 +24,12 @@ const SignIn = () => {
     }   
   return (
     <>
-
-    <Button onClick = {handleSignIn}>SIGNUPWITHGOOGLE</Button>
+<div className="bg-customColor flex items-center justify-center h-screen">
+  <div className='bg-[#180828]'>
+    <Button onClick={handleSignIn}>SIGN UP WITH GOOGLE</Button>
+  
+  </div>
+</div>
 
     </>
   )
