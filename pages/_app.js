@@ -1,4 +1,4 @@
-import Container from '../components/Main/Container'
+
 import {NextUIProvider} from '@nextui-org/react'
 import Layout from '@/components/Common'
 
