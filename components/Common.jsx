@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from './Main/Sidebar'
 import Header from './Main/Header'
-export default function layout ({children}) {
+export default function common ({children}) {
   return (
     <>
     <div className='flex flex-col md:flex-row md:h-[100vh] h-auto w-full bg-[#E8FAF0]'>

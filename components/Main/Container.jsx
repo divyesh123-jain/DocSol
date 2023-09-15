@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import Header from './Header'
-import CertificateTable from '../Table/CertificateTable'
+
 const Container = () => {
   return (
     <>
