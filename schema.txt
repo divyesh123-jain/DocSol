@@ -45,7 +45,7 @@ Table blockchain{
   source_wallet varchar
   destination_wallet varchar
   from_aggregatorid uuid
-  to_userid varchar 
+  to_userid uuid
 }
 
 Ref: blockchain.from_aggregatorid - aggregator.id
