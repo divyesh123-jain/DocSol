@@ -39,3 +39,14 @@ Table certificate{
  Ref: certificate.aggregator_id - aggregator.id
  Ref: certificate.course_id - course.id
 
+Table blockchain{
+  id uuid
+  transaction_id varchar
+  source_wallet varchar
+  destination_wallet varchar
+  from_aggregatorid uuid
+  to_userid varchar 
+}
+
+Ref: blockchain.from_aggregatorid - aggregator.id
+Ref: blockchain.to_userid - user_master.id
