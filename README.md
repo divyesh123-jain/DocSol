@@ -36,3 +36,48 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table aggregator {
+  id uuid
+  name varchar
+  publicwalletaddress varchar
+  created_at timestamp 
+}
+
+Table user_master {
+  id uuid [primary key]
+  name varchar
+  email varchar
+  course_id array
+  digilocker_id integer
+  digilocker_verified boolean
+  publicwalletaddress varchar
+  created_at timestamp
+}
+Ref: user_master.course_id < course.id
+
+Table course {
+  id uuid
+  name varchar
+  aggregator_id uuid
+  created_at timestamp
+}
+Ref: course.aggregator_id - aggregator.id
+
+
+Table certificate{
+  id uuid
+  user_id uuid
+  aggregator_id uuid
+  course_id uuid
+}
+ Ref: certificate.user_id - user_master.id
+ Ref: certificate.aggregator_id - aggregator.id
+ Ref: certificate.course_id - course.id
+
+
